@@ -1,660 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="T.BEST Website Builder creates professional, modern and mobile-friendly websites for businesses, entrepreneurs and brands.">
-
-    <meta name="keywords"
-        content="website designer Nigeria, website builder Nigeria, business website, web design, website management, web software">
-
+    <meta name="description" content="T.BEST Website Builder creates professional websites, landing pages, online stores and custom web solutions for businesses and entrepreneurs.">
+    <meta name="keywords" content="website designer Nigeria, website builder Nigeria, business website, web design, website management, web software">
     <meta name="author" content="T.BEST Website Builder">
 
-    <meta name="theme-color" content="#0b0b0b">
+    <meta property="og:title" content="T.BEST | Professional Website Builder">
+    <meta property="og:description" content="Professional websites designed to help businesses grow online.">
 
-    <meta property="og:title" content="T.BEST — Professional Website Designer">
-
-    <meta property="og:description"
-        content="Professional websites designed to help businesses build trust, attract customers and grow online.">
-
-    <title>T.BEST | Professional Website Designer & Website Builder</title>
+    <title>T.BEST | Professional Website Builder</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-
-        /* =========================================
-           T.BEST FINAL WEBSITE UPGRADE
-           ========================================= */
-
-        .hero-wrapper {
-            width: 100%;
-            max-width: 1250px;
-            margin: auto;
-        }
-
-        .hero-content {
-            text-align: center;
-        }
-
-        .hero-eyebrow {
-            display: inline-block;
-            color: #1e90ff;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            margin-bottom: 18px;
-            text-transform: uppercase;
-        }
-
-        .hero-title {
-            max-width: 950px;
-            margin: 0 auto 25px;
-        }
-
-        .hero-highlight {
-            display: block;
-            color: #1e90ff;
-        }
-
-        .hero-description {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Hero banner */
-
-        .business-banner-container {
-            position: relative;
-            max-width: 950px;
-            margin: 35px auto;
-            border-radius: 20px;
-            overflow: hidden;
-            background: #080808;
-            box-shadow:
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(30, 144, 255, 0.12);
-        }
-
-        .business-banner {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-
-        .banner-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                180deg,
-                rgba(0,0,0,0.02),
-                rgba(0,0,0,0.12)
-            );
-            pointer-events: none;
-        }
-
-        /* Hero buttons */
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin: 30px 0;
-        }
-
-        .hero-buttons .btn {
-            min-width: 210px;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: linear-gradient(
-                135deg,
-                #1e90ff,
-                #0066cc
-            ) !important;
-            color: #fff !important;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(30,144,255,0.35);
-        }
-
-        .btn-secondary {
-            background: transparent !important;
-            border: 2px solid #fff;
-            color: #fff !important;
-        }
-
-        .btn-secondary:hover {
-            background: #fff !important;
-            color: #111 !important;
-        }
-
-        /* Trust points */
-
-        .hero-trust {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-
-        .trust-item {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            color: #ddd;
-            font-size: 14px;
-        }
-
-        .trust-icon {
-            width: 21px;
-            height: 21px;
-            border-radius: 50%;
-            background: #1e90ff;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        /* =========================================
-           PROFESSIONAL PORTFOLIO
-           ========================================= */
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .project {
-            background: #fff;
-            border-radius: 18px;
-            overflow: hidden;
-            border: 1px solid #e8e8e8;
-            transition: all 0.35s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-        }
-
-        .project-image {
-            padding: 0 !important;
-            height: 330px;
-            background: #111;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top center;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .project:hover .project-image img {
-            transform: scale(1.04);
-        }
-
-        .project-content {
-            padding: 25px;
-        }
-
-        .portfolio-label {
-            display: inline-block;
-            color: #1e90ff;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
-        }
-
-        .project-content h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #111;
-        }
-
-        .project-content p {
-            color: #666;
-            line-height: 1.7;
-        }
-
-        /* Portfolio CTA */
-
-        .portfolio-cta {
-            margin-top: 55px;
-            padding: 50px 30px;
-            text-align: center;
-            border-radius: 20px;
-            background:
-                linear-gradient(
-                    135deg,
-                    #0a0a0a,
-                    #1b1b1b
-                );
-            color: #fff;
-        }
-
-        .portfolio-cta h3 {
-            font-size: 30px;
-            margin-bottom: 12px;
-        }
-
-        .portfolio-cta p {
-            color: #bbb;
-            max-width: 650px;
-            margin: 0 auto 25px;
-        }
-
-        /* =========================================
-           PRICING / CTA
-           ========================================= */
-
-        .pricing {
-            background: #f7f7f7;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .price-card {
-            background: #fff;
-            border-radius: 18px;
-            padding: 35px 28px;
-            border: 1px solid #e5e5e5;
-            text-align: center;
-            transition: 0.3s ease;
-        }
-
-        .price-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 18px 40px rgba(0,0,0,0.1);
-        }
-
-        .price-card.featured {
-            border: 2px solid #1e90ff;
-            transform: scale(1.03);
-        }
-
-        .price-card.featured:hover {
-            transform: scale(1.03) translateY(-7px);
-        }
-
-        .price-card h3 {
-            font-size: 23px;
-            margin-bottom: 10px;
-        }
-
-        .price-card .price {
-            font-size: 30px;
-            font-weight: 800;
-            color: #1e90ff;
-            margin: 15px 0;
-        }
-
-        .price-card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .price-card ul {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 25px;
-        }
-
-        .price-card li {
-            padding: 8px 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
-        }
-
-        .price-card li::before {
-            content: "✓";
-            color: #1e90ff;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        /* =========================================
-           STRONG FINAL CTA
-           ========================================= */
-
-        .final-cta {
-            padding: 90px 5%;
-            background:
-                linear-gradient(
-                    135deg,
-                    #111,
-                    #222
-                );
-            color: #fff;
-            text-align: center;
-        }
-
-        .final-cta h2 {
-            font-size: clamp(32px, 5vw, 55px);
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .final-cta p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #ccc;
-            font-size: 18px;
-        }
-
-        .final-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        /* Floating WhatsApp */
-
-        .floating-whatsapp {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            z-index: 2000;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            background: #25D366;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 27px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-            transition: 0.3s ease;
-        }
-
-        .floating-whatsapp:hover {
-            transform: scale(1.08);
-        }
-
-        /* Mobile */
-
-        @media (max-width: 900px) {
-
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .price-card.featured {
-                transform: none;
-            }
-
-            .price-card.featured:hover {
-                transform: translateY(-7px);
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-        @media (max-width: 600px) {
-
-            .hero {
-                padding-top: 55px;
-                padding-bottom: 55px;
-            }
-
-            .hero-eyebrow {
-                font-size: 11px;
-                letter-spacing: 1.5px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-                max-width: 330px;
-            }
-
-            .hero-trust {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .project-image {
-                height: 240px;
-            }
-
-            .portfolio-cta {
-                padding: 35px 20px;
-            }
-
-            .portfolio-cta h3 {
-                font-size: 24px;
-            }
-
-            .final-cta {
-                padding: 65px 5%;
-            }
-
-            .floating-whatsapp {
-                width: 54px;
-                height: 54px;
-                right: 15px;
-                bottom: 15px;
-            }
-
-        }
-
-    </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================================
+<!-- =========================
      HEADER
-     ========================================= -->
+========================= -->
 
-<header>
+<header class="site-header">
+    <nav class="navbar">
 
-    <nav>
-
-        <div class="logo">
-
+        <a href="#home" class="brand">
             <img
                 src="IMG_20260830_151128_(256_x_256_pixel).png"
                 alt="T.BEST Website Builder Logo"
-                class="logo-img"
             >
+        </a>
 
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
 
-
-        <ul>
-
-            <li>
-                <a href="#home">Home</a>
-            </li>
-
-            <li>
-                <a href="#services">Services</a>
-            </li>
-
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-        </ul>
-
-
         <a
-            class="top-btn"
             href="https://wa.link/qxjtsi"
             target="_blank"
             rel="noopener"
+            class="nav-cta"
         >
             WhatsApp
         </a>
 
     </nav>
-
 </header>
 
 
-
-<!-- =========================================
+<!-- =========================
      HERO
-     ========================================= -->
+========================= -->
+
+<main>
 
 <section class="hero" id="home">
 
-    <div class="hero-wrapper">
+    <div class="hero-bg"></div>
+
+    <div class="hero-container">
 
         <div class="hero-content">
 
-
-            <div class="hero-eyebrow">
-                🚀 PROFESSIONAL WEBSITE DESIGNER
+            <div class="hero-badge">
+                <span>●</span>
+                PROFESSIONAL WEBSITE DESIGN
             </div>
 
-
-            <h1 class="hero-title">
-
-                Professional Websites That
-
-                <span class="hero-highlight">
-                    Grow Your Business
-                </span>
-
+            <h1>
+                Your Business Deserves
+                <span>A Powerful Website.</span>
             </h1>
 
-
-            <!-- BUSINESS BANNER -->
-
-            <div class="business-banner-container">
-
-                <img
-                    src="Screenshot_20260828-113504%20(1).jpg"
-                    alt="T.BEST Website Builder Business Banner"
-                    class="business-banner"
-                >
-
-                <div class="banner-overlay"></div>
-
-            </div>
-
-
-            <p class="hero-description">
-
-                Modern, professional and mobile-friendly websites
-                designed to help businesses, entrepreneurs and brands
-                attract customers, build trust and grow online.
-
+            <p class="hero-text">
+                T.BEST creates modern, professional and mobile-friendly
+                websites that help businesses build trust, attract customers
+                and grow online.
             </p>
 
-
-            <div class="hero-buttons">
+            <div class="hero-actions">
 
                 <a
-                    class="btn btn-primary"
                     href="https://wa.link/qxjtsi"
                     target="_blank"
                     rel="noopener"
+                    class="btn btn-primary"
                 >
-                    GET YOUR WEBSITE →
+                    Start Your Website
+                    <span>→</span>
                 </a>
 
-
                 <a
-                    class="btn btn-secondary"
                     href="tel:+2347073559922"
+                    class="btn btn-outline"
                 >
-                    📞 CALL T.BEST
+                    Call T.BEST
+                    <span>📞</span>
                 </a>
 
             </div>
-
 
             <div class="hero-trust">
 
-                <div class="trust-item">
-
-                    <span class="trust-icon">✓</span>
-
-                    <span>
-                        Mobile Friendly
-                    </span>
-
+                <div>
+                    <strong>✓</strong>
+                    <span>Mobile Friendly</span>
                 </div>
 
-
-                <div class="trust-item">
-
-                    <span class="trust-icon">✓</span>
-
-                    <span>
-                        Professional Design
-                    </span>
-
+                <div>
+                    <strong>✓</strong>
+                    <span>Professional Design</span>
                 </div>
 
-
-                <div class="trust-item">
-
-                    <span class="trust-icon">✓</span>
-
-                    <span>
-                        Business Focused
-                    </span>
-
+                <div>
+                    <strong>✓</strong>
+                    <span>Business Focused</span>
                 </div>
 
+            </div>
 
-                <div class="trust-item">
+        </div>
 
-                    <span class="trust-icon">✓</span>
+        <div class="hero-visual">
 
-                    <span>
-                        Direct Support
-                    </span>
+            <div class="visual-card">
 
+                <div class="visual-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <img
+                    src="Screenshot_20260828-113504%20(1).jpg"
+                    alt="T.BEST Website Design"
+                >
+
+                <div class="visual-label">
+                    <span>✦</span>
+                    T.BEST DIGITAL SOLUTIONS
                 </div>
 
             </div>
@@ -666,225 +155,144 @@
 </section>
 
 
+<!-- =========================
+     TRUST STRIP
+========================= -->
 
-<!-- =========================================
-     TRUST
-     ========================================= -->
+<section class="trust-strip">
 
-<div class="trust-section">
+    <div class="trust-container">
 
-    <div class="trust-box">
+        <div class="trust-item">
+            <span class="trust-icon">✦</span>
+            <div>
+                <strong>Modern Design</strong>
+                <small>Professional appearance</small>
+            </div>
+        </div>
 
-        <strong>
-            Modern Design
-        </strong>
+        <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <div>
+                <strong>Mobile First</strong>
+                <small>Looks great on phones</small>
+            </div>
+        </div>
 
-        <span>
-            Clean & professional
-        </span>
+        <div class="trust-item">
+            <span class="trust-icon">⚡</span>
+            <div>
+                <strong>Fast & Simple</strong>
+                <small>Easy customer experience</small>
+            </div>
+        </div>
 
-    </div>
-
-
-    <div class="trust-box">
-
-        <strong>
-            Mobile Friendly
-        </strong>
-
-        <span>
-            Perfect on phones
-        </span>
-
-    </div>
-
-
-    <div class="trust-box">
-
-        <strong>
-            Fast Delivery
-        </strong>
-
-        <span>
-            Built around your goals
-        </span>
+        <div class="trust-item">
+            <span class="trust-icon">◆</span>
+            <div>
+                <strong>Direct Support</strong>
+                <small>We're here when you need us</small>
+            </div>
+        </div>
 
     </div>
 
-
-    <div class="trust-box">
-
-        <strong>
-            Direct Support
-        </strong>
-
-        <span>
-            Easy communication
-        </span>
-
-    </div>
-
-</div>
+</section>
 
 
-
-<!-- =========================================
+<!-- =========================
      SERVICES
-     ========================================= -->
+========================= -->
 
-<section id="services">
+<section class="section services-section" id="services">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <small>
-                OUR SERVICES
-            </small>
+            <span class="section-label">WHAT WE DO</span>
 
             <h2>
-                Professional digital solutions for your business.
+                Everything you need<br>
+                <span>to grow online.</span>
             </h2>
 
             <p>
-                From business websites to custom web solutions,
-                T.BEST helps you establish a stronger online presence.
+                From a simple business website to custom web software,
+                T.BEST provides practical digital solutions built around
+                your goals.
             </p>
 
         </div>
 
 
-        <div class="services">
+        <div class="services-grid">
 
-
-            <div class="card">
-
-                <div class="number">01</div>
-
-                <h3>
-                    Business Websites
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">01</div>
+                <div class="service-icon">◈</div>
+                <h3>Business Websites</h3>
                 <p>
-                    Professional websites that showcase your
-                    business and make it easy for customers
+                    Professional websites that introduce your business,
+                    showcase your services and make it easy for customers
                     to contact you.
                 </p>
+            </article>
 
-            </div>
 
-
-            <div class="card">
-
-                <div class="number">02</div>
-
-                <h3>
-                    Mobile-Friendly Websites
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">02</div>
+                <div class="service-icon">▣</div>
+                <h3>Landing Pages</h3>
                 <p>
-                    Responsive websites designed to look
-                    beautiful on phones, tablets and computers.
+                    High-converting pages designed to turn visitors into
+                    enquiries, calls and customers.
                 </p>
+            </article>
 
-            </div>
 
-
-            <div class="card">
-
-                <div class="number">03</div>
-
-                <h3>
-                    Landing Pages
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">03</div>
+                <div class="service-icon">◇</div>
+                <h3>Online Stores</h3>
                 <p>
-                    High-impact pages designed to turn visitors
-                    into customers, calls and WhatsApp enquiries.
+                    Modern e-commerce websites that help businesses
+                    present and sell their products online.
                 </p>
+            </article>
 
-            </div>
 
-
-            <div class="card">
-
-                <div class="number">04</div>
-
-                <h3>
-                    E-Commerce Websites
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">04</div>
+                <div class="service-icon">↻</div>
+                <h3>Website Management</h3>
                 <p>
-                    Professional online stores for businesses
-                    that want to sell products and services online.
+                    Website updates, improvements and ongoing management
+                    to keep your online presence looking professional.
                 </p>
+            </article>
 
-            </div>
 
-
-            <div class="card">
-
-                <div class="number">05</div>
-
-                <h3>
-                    Website Redesign
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">05</div>
+                <div class="service-icon">⌁</div>
+                <h3>Website Redesign</h3>
                 <p>
-                    Transform an outdated website into a modern,
-                    attractive and professional experience.
+                    Give an outdated website a fresh, modern and
+                    professional appearance.
                 </p>
+            </article>
 
-            </div>
 
-
-            <div class="card">
-
-                <div class="number">06</div>
-
-                <h3>
-                    Website Management
-                </h3>
-
+            <article class="service-card">
+                <div class="service-number">06</div>
+                <div class="service-icon">&lt;/&gt;</div>
+                <h3>Web Software</h3>
                 <p>
-                    Keep your website updated, maintained and
-                    ready for your customers.
+                    Custom web-based tools and software designed around
+                    specific business requirements.
                 </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="number">07</div>
-
-                <h3>
-                    SEO-Friendly Websites
-                </h3>
-
-                <p>
-                    Build a stronger foundation for search
-                    visibility and online discovery.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="number">08</div>
-
-                <h3>
-                    Web Software Solutions
-                </h3>
-
-                <p>
-                    Custom web-based software and digital tools
-                    designed around specific business needs.
-                </p>
-
-            </div>
-
+            </article>
 
         </div>
 
@@ -893,155 +301,26 @@
 </section>
 
 
-
-<!-- =========================================
-     WHY T.BEST
-     ========================================= -->
-
-<section class="why" id="why">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <small>
-                WHY T.BEST
-            </small>
-
-            <h2>
-                Your website should work for your business.
-            </h2>
-
-            <p>
-                A professional website should build trust,
-                communicate your value and make it easy
-                for customers to take action.
-            </p>
-
-        </div>
-
-
-        <div class="features">
-
-
-            <div class="feature">
-
-                <div class="check">
-                    ✓
-                </div>
-
-                <div>
-
-                    <h3>
-                        Professional Appearance
-                    </h3>
-
-                    <p>
-                        Make a powerful first impression when
-                        customers discover your business online.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="feature">
-
-                <div class="check">
-                    ✓
-                </div>
-
-                <div>
-
-                    <h3>
-                        Mobile First
-                    </h3>
-
-                    <p>
-                        Give customers a smooth experience
-                        on the smartphones they use every day.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="feature">
-
-                <div class="check">
-                    ✓
-                </div>
-
-                <div>
-
-                    <h3>
-                        Fast & User Friendly
-                    </h3>
-
-                    <p>
-                        Clean layouts and simple navigation
-                        help visitors find what they need.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="feature">
-
-                <div class="check">
-                    ✓
-                </div>
-
-                <div>
-
-                    <h3>
-                        Ongoing Support
-                    </h3>
-
-                    <p>
-                        Get help with website updates,
-                        improvements and management.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
+<!-- =========================
      PORTFOLIO
-     ========================================= -->
+========================= -->
 
-<section class="portfolio" id="portfolio">
+<section class="section portfolio-section" id="portfolio">
 
     <div class="container">
 
+        <div class="section-heading centered">
 
-        <div class="section-title">
-
-            <small>
-                OUR PORTFOLIO
-            </small>
+            <span class="section-label">OUR PORTFOLIO</span>
 
             <h2>
-                See what T.BEST can create for your business.
+                Designs that make<br>
+                <span>businesses stand out.</span>
             </h2>
 
             <p>
-                Explore our website concepts and demo projects.
-                Your business could be next.
+                Here are examples of the type of professional websites
+                T.BEST can create for different businesses.
             </p>
 
         </div>
@@ -1050,341 +329,268 @@
         <div class="portfolio-grid">
 
 
-            <!-- PORTFOLIO 1 -->
+            <article class="portfolio-card">
 
-            <div class="project">
-
-                <div class="project-image">
-
+                <div class="portfolio-image">
                     <img
                         src="file_0000000081f481f4bee5f93be31cb6da.png"
-                        alt="T.BEST Demo Website 1"
+                        alt="T.BEST Business Website Demo"
                         loading="lazy"
                     >
 
+                    <div class="portfolio-overlay">
+                        <span>WEBSITE DESIGN</span>
+                    </div>
                 </div>
 
-
-                <div class="project-content">
-
-                    <span class="portfolio-label">
-                        DEMO WEBSITE
-                    </span>
-
-                    <h3>
-                        Professional Business Website
-                    </h3>
-
+                <div class="portfolio-info">
+                    <span>01 / BUSINESS</span>
+                    <h3>Professional Business Website</h3>
                     <p>
-                        A modern website concept designed to give
-                        businesses a professional online presence
-                        and make it easy for customers to contact them.
+                        A clean digital presence designed to build trust
+                        and attract customers.
                     </p>
-
                 </div>
 
-            </div>
+            </article>
 
 
+            <article class="portfolio-card">
 
-            <!-- PORTFOLIO 2 -->
-
-            <div class="project">
-
-                <div class="project-image">
-
+                <div class="portfolio-image">
                     <img
                         src="file_00000000bf3881f48d92972a50e6f5ae.png"
-                        alt="T.BEST Demo Website 2"
+                        alt="T.BEST Restaurant Website Demo"
                         loading="lazy"
                     >
 
+                    <div class="portfolio-overlay">
+                        <span>WEBSITE DESIGN</span>
+                    </div>
                 </div>
 
-
-                <div class="project-content">
-
-                    <span class="portfolio-label">
-                        DEMO WEBSITE
-                    </span>
-
-                    <h3>
-                        Modern Business Website
-                    </h3>
-
+                <div class="portfolio-info">
+                    <span>02 / RESTAURANT</span>
+                    <h3>Restaurant & Hospitality Website</h3>
                     <p>
-                        A clean and attractive website concept
-                        created to help a business build trust
-                        and attract more customers online.
+                        A stylish online experience for restaurants,
+                        lounges and hospitality businesses.
                     </p>
-
                 </div>
 
-            </div>
+            </article>
 
 
+            <article class="portfolio-card">
 
-            <!-- PORTFOLIO 3 -->
-
-            <div class="project">
-
-                <div class="project-image">
-
+                <div class="portfolio-image">
                     <img
                         src="file_00000000a888820a9822928bc2802f5d.png"
-                        alt="T.BEST Demo Website 3"
+                        alt="T.BEST Online Store Website Demo"
                         loading="lazy"
                     >
 
+                    <div class="portfolio-overlay">
+                        <span>WEBSITE DESIGN</span>
+                    </div>
                 </div>
 
-
-                <div class="project-content">
-
-                    <span class="portfolio-label">
-                        DEMO WEBSITE
-                    </span>
-
-                    <h3>
-                        Business & Brand Website
-                    </h3>
-
+                <div class="portfolio-info">
+                    <span>03 / E-COMMERCE</span>
+                    <h3>Online Store Website</h3>
                     <p>
-                        A professional website concept focused on
-                        presenting a brand clearly and turning
-                        visitors into potential customers.
+                        A professional shopping experience designed
+                        for businesses selling products online.
                     </p>
-
                 </div>
 
-            </div>
+            </article>
 
 
+            <article class="portfolio-card">
 
-            <!-- PORTFOLIO 4 -->
-
-            <div class="project">
-
-                <div class="project-image">
-
+                <div class="portfolio-image">
                     <img
                         src="file_0000000031c081f4ab8a13d5876e5ad5.png"
-                        alt="T.BEST Demo Website 4"
+                        alt="T.BEST Website Design Project"
                         loading="lazy"
                     >
 
+                    <div class="portfolio-overlay">
+                        <span>WEBSITE DESIGN</span>
+                    </div>
                 </div>
 
-
-                <div class="project-content">
-
-                    <span class="portfolio-label">
-                        DEMO WEBSITE
-                    </span>
-
-                    <h3>
-                        Professional Website Design
-                    </h3>
-
+                <div class="portfolio-info">
+                    <span>04 / CUSTOM DESIGN</span>
+                    <h3>Custom Business Website</h3>
                     <p>
-                        A responsive website concept designed
-                        to look professional across phones,
-                        tablets and computers.
+                        A tailored website concept designed around a
+                        unique brand and business identity.
                     </p>
-
                 </div>
 
-            </div>
+            </article>
 
 
         </div>
 
+    </div>
 
-        <div class="portfolio-cta">
+</section>
 
-            <h3>
-                Like what you see?
-            </h3>
+
+<!-- =========================
+     WHY T.BEST
+========================= -->
+
+<section class="section why-section">
+
+    <div class="container why-container">
+
+        <div class="why-content">
+
+            <span class="section-label">WHY T.BEST</span>
+
+            <h2>
+                More than a website.
+                <span>A digital advantage.</span>
+            </h2>
 
             <p>
-                Let T.BEST create a professional website
-                specifically for your business.
+                Your website is often the first place a potential customer
+                meets your business online. We focus on making that first
+                impression count.
             </p>
 
             <a
                 href="https://wa.link/qxjtsi"
                 target="_blank"
                 rel="noopener"
-                class="btn btn-primary"
+                class="text-link"
             >
-                START YOUR WEBSITE →
+                Let's build yours →
             </a>
 
         </div>
 
 
+        <div class="benefits">
+
+            <div class="benefit">
+                <span>01</span>
+                <div>
+                    <h3>Professional First Impression</h3>
+                    <p>
+                        Present your business with confidence and
+                        credibility online.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="benefit">
+                <span>02</span>
+                <div>
+                    <h3>Designed for Mobile</h3>
+                    <p>
+                        Give customers a smooth experience on the
+                        devices they use every day.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="benefit">
+                <span>03</span>
+                <div>
+                    <h3>Clear Customer Actions</h3>
+                    <p>
+                        Make it easy for visitors to call, message
+                        or contact your business.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="benefit">
+                <span>04</span>
+                <div>
+                    <h3>Ongoing Support</h3>
+                    <p>
+                        We can help maintain and improve your website
+                        as your business grows.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 </section>
 
 
+<!-- =========================
+     PROCESS
+========================= -->
 
-<!-- =========================================
-     PRICING / PACKAGES
-     ========================================= -->
-
-<section class="pricing" id="packages">
+<section class="section process-section">
 
     <div class="container">
 
+        <div class="section-heading centered">
 
-        <div class="section-title">
-
-            <small>
-                WEBSITE SOLUTIONS
-            </small>
+            <span class="section-label">OUR PROCESS</span>
 
             <h2>
-                Choose the right solution for your business.
+                Simple from start<br>
+                <span>to launch.</span>
             </h2>
-
-            <p>
-                Every website can be customized around your
-                business, goals and requirements.
-            </p>
 
         </div>
 
 
-        <div class="pricing-grid">
+        <div class="process-grid">
 
-
-            <div class="price-card">
-
-                <h3>
-                    Starter
-                </h3>
-
-                <div class="price">
-                    Custom Quote
-                </div>
-
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Tell Us What You Need</h3>
                 <p>
-                    Perfect for individuals and small businesses
-                    starting their online presence.
+                    Tell us about your business and the type of website
+                    you want.
                 </p>
-
-                <ul>
-
-                    <li>Professional website</li>
-
-                    <li>Mobile-friendly design</li>
-
-                    <li>Business information</li>
-
-                    <li>Contact & WhatsApp buttons</li>
-
-                    <li>Basic SEO setup</li>
-
-                </ul>
-
-                <a
-                    href="https://wa.link/qxjtsi"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-primary"
-                >
-                    GET STARTED
-                </a>
-
             </div>
 
 
-
-            <div class="price-card featured">
-
-                <h3>
-                    Business
-                </h3>
-
-                <div class="price">
-                    Custom Quote
-                </div>
-
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>We Design</h3>
                 <p>
-                    A complete professional website for businesses
-                    that want to grow their online presence.
+                    We create a professional design around your brand
+                    and business goals.
                 </p>
-
-                <ul>
-
-                    <li>Professional multi-section website</li>
-
-                    <li>Responsive mobile design</li>
-
-                    <li>Portfolio / gallery</li>
-
-                    <li>WhatsApp & call integration</li>
-
-                    <li>SEO-friendly structure</li>
-
-                    <li>Website support</li>
-
-                </ul>
-
-                <a
-                    href="https://wa.link/qxjtsi"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-primary"
-                >
-                    CHOOSE BUSINESS
-                </a>
-
             </div>
 
 
-
-            <div class="price-card">
-
-                <h3>
-                    Custom Solution
-                </h3>
-
-                <div class="price">
-                    Let's Discuss
-                </div>
-
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>You Review</h3>
                 <p>
-                    For businesses that need advanced websites,
-                    online stores or custom web software.
+                    You review the website and request changes where
+                    necessary.
                 </p>
-
-                <ul>
-
-                    <li>Custom website features</li>
-
-                    <li>E-commerce solutions</li>
-
-                    <li>Web software</li>
-
-                    <li>Business automation</li>
-
-                    <li>Website management</li>
-
-                </ul>
-
-                <a
-                    href="https://wa.link/qxjtsi"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-primary"
-                >
-                    DISCUSS PROJECT
-                </a>
-
             </div>
 
+
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Launch</h3>
+                <p>
+                    Your finished website goes online and is ready
+                    for your customers.
+                </p>
+            </div>
 
         </div>
 
@@ -1393,353 +599,201 @@
 </section>
 
 
-
-<!-- =========================================
+<!-- =========================
      ABOUT
-     ========================================= -->
+========================= -->
 
-<section class="about" id="about">
+<section class="section about-section" id="about">
 
-    <div class="about-content">
+    <div class="container about-container">
 
-        <div class="section-title">
+        <div class="about-image">
 
-            <small>
-                ABOUT T.BEST
-            </small>
-
-            <h2>
-                Designing websites. Building brands. Growing businesses.
-            </h2>
+            <img
+                src="IMG_20260830_151128_(256_x_256_pixel).png"
+                alt="T.BEST Website Builder"
+            >
 
         </div>
 
 
-        <p>
+        <div class="about-content">
 
-            T.BEST Website Builder helps businesses,
-            entrepreneurs and brands establish a professional
-            online presence through modern website design,
-            website management and practical web software solutions.
-
-        </p>
-
-
-        <br>
-
-
-        <p>
-
-            Whether you are starting a new business or improving
-            an existing online presence, we focus on creating
-            websites that look professional, work beautifully
-            on mobile devices and make it easier for customers
-            to contact your business.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     HOW IT WORKS
-     ========================================= -->
-
-<section id="process">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <small>
-                HOW IT WORKS
-            </small>
+            <span class="section-label">ABOUT T.BEST</span>
 
             <h2>
-                From idea to professional website.
+                Building better websites
+                for modern businesses.
             </h2>
 
             <p>
-                Getting your business online is simple.
+                T.BEST Website Builder helps businesses, entrepreneurs
+                and brands create a stronger online presence through
+                professional website design and digital solutions.
             </p>
-
-        </div>
-
-
-        <div class="services">
-
-
-            <div class="card">
-
-                <div class="number">
-                    01
-                </div>
-
-                <h3>
-                    Tell Us About Your Business
-                </h3>
-
-                <p>
-                    Tell us about your business, services
-                    and the website you need.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="number">
-                    02
-                </div>
-
-                <h3>
-                    We Design
-                </h3>
-
-                <p>
-                    We create a professional website
-                    designed around your business.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="number">
-                    03
-                </div>
-
-                <h3>
-                    You Review
-                </h3>
-
-                <p>
-                    Review the design and request any
-                    changes you need.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="number">
-                    04
-                </div>
-
-                <h3>
-                    Launch
-                </h3>
-
-                <p>
-                    Your website goes online and becomes
-                    available to your customers.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     FINAL CTA
-     ========================================= -->
-
-<section class="final-cta">
-
-    <h2>
-        Ready to take your business online?
-    </h2>
-
-    <p>
-        Give your business a professional online presence
-        with a modern website built around your goals.
-    </p>
-
-
-    <div class="final-buttons">
-
-        <a
-            href="https://wa.link/qxjtsi"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-        >
-            💬 CHAT ON WHATSAPP
-        </a>
-
-
-        <a
-            href="tel:+2347073559922"
-            class="btn btn-secondary"
-        >
-            📞 CALL T.BEST
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     CONTACT
-     ========================================= -->
-
-<section class="contact" id="contact">
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <small>
-                LET'S WORK TOGETHER
-            </small>
-
-            <h2>
-                Let's build your website.
-            </h2>
 
             <p>
-                Tell us about your business and what you need.
-                We will discuss the best website solution for you.
+                Whether you need a new business website, a landing page,
+                an online store, website management or a custom web
+                solution, our goal is to create something professional,
+                useful and easy for your customers to use.
             </p>
-
-        </div>
-
-
-        <div class="contact-info">
-
-            <span>
-                📞 +234 707 355 9922
-            </span>
-
-            <span>
-                💬 WhatsApp Available
-            </span>
-
-        </div>
-
-
-        <div class="buttons">
 
             <a
+                href="https://wa.link/qxjtsi"
+                target="_blank"
+                rel="noopener"
                 class="btn btn-primary"
+            >
+                Work With T.BEST →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section class="final-cta" id="contact">
+
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+
+        <span class="section-label">READY TO GET STARTED?</span>
+
+        <h2>
+            Let's build a website
+            <span>your customers will remember.</span>
+        </h2>
+
+        <p>
+            Tell us about your business and let's discuss
+            how we can build your professional online presence.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a
+                href="https://wa.link/qxjtsi"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary btn-large"
+            >
+                💬 Chat on WhatsApp
+            </a>
+
+            <a
+                href="tel:+2347073559922"
+                class="btn btn-light btn-large"
+            >
+                📞 +234 707 355 9922
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <img
+                src="IMG_20260830_151128_(256_x_256_pixel).png"
+                alt="T.BEST Logo"
+            >
+
+            <p>
+                Professional websites and digital solutions
+                for modern businesses.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Navigation</h3>
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="#services">Business Websites</a>
+            <a href="#services">Landing Pages</a>
+            <a href="#services">Online Stores</a>
+            <a href="#services">Website Management</a>
+            <a href="#services">Web Software</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <a href="tel:+2347073559922">
+                +234 707 355 9922
+            </a>
+
+            <a
                 href="https://wa.link/qxjtsi"
                 target="_blank"
                 rel="noopener"
             >
-                CHAT ON WHATSAPP
+                WhatsApp
             </a>
 
-
-            <a
-                class="btn btn-secondary"
-                href="tel:+2347073559922"
-            >
-                CALL T.BEST
-            </a>
+            <span>Nigeria</span>
 
         </div>
 
     </div>
 
-</section>
 
+    <div class="footer-bottom">
 
+        <span>
+            © 2026 T.BEST Website Builder. All rights reserved.
+        </span>
 
-<!-- =========================================
-     FOOTER
-     ========================================= -->
-
-<footer>
-
-
-    <div class="footer-logo">
-
-        <img
-            src="IMG_20260830_151128_(256_x_256_pixel).png"
-            alt="T.BEST Website Builder Logo"
-            class="footer-logo-img"
-        >
+        <span>
+            DESIGN • BUILD • GROW
+        </span>
 
     </div>
-
-
-    <p>
-        DESIGNING WEBSITES • BUILDING BRANDS • GROWING BUSINESSES
-    </p>
-
-
-    <div class="footer-links">
-
-        <a href="#home">
-            Home
-        </a>
-
-        <a href="#services">
-            Services
-        </a>
-
-        <a href="#portfolio">
-            Portfolio
-        </a>
-
-        <a href="#packages">
-            Packages
-        </a>
-
-        <a href="#about">
-            About
-        </a>
-
-        <a href="#contact">
-            Contact
-        </a>
-
-        <a
-            href="https://wa.link/qxjtsi"
-            target="_blank"
-            rel="noopener"
-        >
-            WhatsApp
-        </a>
-
-        <a href="tel:+2347073559922">
-            Call
-        </a>
-
-    </div>
-
-
-    <div class="copyright">
-
-        © 2026 T.BEST Website Builder.
-        All rights reserved.
-
-    </div>
-
 
 </footer>
 
 
-
-<!-- =========================================
-     FLOATING WHATSAPP BUTTON
-     ========================================= -->
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
 
 <a
     href="https://wa.link/qxjtsi"
@@ -1753,5 +807,4 @@
 
 
 </body>
-
 </html>
