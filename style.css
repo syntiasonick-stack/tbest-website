@@ -121,11 +121,41 @@ nav ul li a:hover {
     color: #1e90ff;
 }
 
+/* Business Banner Styling */
+.business-banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(30, 144, 255, 0.2);
+}
+
+.business-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
 .hero p {
     max-width: 650px;
     font-size: 20px;
     color: #ddd;
     margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .buttons {
@@ -514,6 +544,11 @@ footer strong {
         margin-right: auto;
     }
 
+    .business-banner-container {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
     .buttons {
         justify-content: center;
     }
@@ -562,5 +597,14 @@ footer strong {
 
     .hero h1 {
         font-size: 32px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .business-banner-container {
+        margin: 15px auto;
+        border-radius: 10px;
     }
 }
